@@ -8,9 +8,14 @@ import List from "./List";
 //
 function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
-    </div>
+    <>
+      <section id="App">
+        <div id="App-container">
+          <h1>0 Birthday today</h1>
+          <List />
+        </div>
+      </section>
+    </>
   );
 }
 
