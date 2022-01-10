@@ -10,7 +10,9 @@ import List from "./List";
 function App() {
   const [people, setPeople] = useState(data);
 
-  const clearList = () => {};
+  const clearList = () => {
+    setPeople([]);
+  };
   return (
     <>
       <section id="App">

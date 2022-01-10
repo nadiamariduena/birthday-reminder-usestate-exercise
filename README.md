@@ -6,7 +6,13 @@
 
 ##### credits images:
 
-- [Cottonbro](https://www.pexels.com/@cottonbro/collections/)
+[Cottonbro](https://www.pexels.com/@cottonbro/collections/)
+
+[Joel Mott](https://unsplash.com/@joelmott)
+
+[Allef Vinicius](https://unsplash.com/@seteph)
+
+[Binh Ly](https://unsplash.com/@binhly)
 
 <br>
 <br>
@@ -79,7 +85,7 @@ const List = ({ people }) => {
 
 <br>
 
-#### Now that we have the data, lets .map it
+#### Now that we have the data, .map it
 
 ```javascript
     {people.map((people) => {
