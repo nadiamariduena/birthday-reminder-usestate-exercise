@@ -80,3 +80,13 @@ const List = ({ people }) => {
 <br>
 
 #### Now that we have the data, lets .map it
+
+```javascript
+    {people.map((people) => {
+```
+
+#### Destructure it, so to grab what we want from the data.js
+
+```javascript
+const { id, image, name, age } = people;
+```
