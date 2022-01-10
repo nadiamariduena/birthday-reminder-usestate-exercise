@@ -58,3 +58,15 @@ black and opacity
   transition: 1s ease-in-out;
   text-transform: uppercase;
 }
+
+/* ---- */
+
+.containerList {
+  border: 1px solid #000;
+}
+
+.img-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}

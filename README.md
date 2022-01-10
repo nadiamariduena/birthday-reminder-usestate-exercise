@@ -76,3 +76,7 @@ export default App;
 ```javascript
 const List = ({ people }) => {
 ```
+
+<br>
+
+#### Now that we have the data, lets .map it
