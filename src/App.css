@@ -6,6 +6,7 @@
 
 body {
   background-color: #f3efe9;
+  overflow-x: hidden;
 }
 
 .App {
@@ -22,7 +23,7 @@ body {
 }
 
 #App-container {
-  padding: 20vh 20vh;
+  padding: 0.5vh 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +34,6 @@ rgb(0 0 0 / 0.2);
 black and opacity
  box-shadow: 0 3px 10px rgb(39, 39, 39);
 */
-  box-shadow: 0 0 50px #ccc;
 }
 
 .btn-card {
@@ -61,12 +61,43 @@ black and opacity
 
 /* ---- */
 
-.containerList {
-  border: 1px solid #000;
+.listWrapper {
+  width: 100%;
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 2em;
+  background-color: rgb(247, 247, 234);
+  box-shadow: 0 0 50px rgb(233, 233, 233);
 }
 
-.img-box {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
+.containerList {
+  border-bottom: 1px dotted rgb(209, 209, 193);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+}
+
+.containerList img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.blockText {
+  margin: 0 0 0 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 0.35rem;
+}
+h4 {
+  margin-bottom: 0;
 }

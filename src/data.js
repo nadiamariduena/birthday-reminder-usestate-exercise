@@ -4,27 +4,27 @@ export default [
     name: "Sam Yales",
     age: 29,
     image:
-      "https://images.pexels.com/photos/10675990/pexels-photo-10675990.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
   },
   {
     id: 2,
-    name: "Henry Yates",
+    name: "Nuria Yates",
     age: 30,
     image:
-      "https://images.pexels.com/photos/10675991/pexels-photo-10675991.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      "https://images.unsplash.com/photo-1480914362564-9f2c2634e266?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   },
   {
     id: 3,
-    name: "Paul Hatch",
+    name: "Phoebe Hatch",
     age: 31,
     image:
-      "https://images.pexels.com/photos/10675992/pexels-photo-10675992.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      "https://images.unsplash.com/photo-1468488718849-422a2a5efc03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
   },
   {
     id: 4,
     name: "Alice Pohl",
     age: 31,
     image:
-      "https://images.pexels.com/photos/8343923/pexels-photo-8343923.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      "https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80",
   },
 ];

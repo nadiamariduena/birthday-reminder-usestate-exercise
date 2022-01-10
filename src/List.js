@@ -2,16 +2,20 @@ import React from "react";
 
 const List = ({ people }) => {
   return (
-    <div>
+    <section className="listWrapper">
       {people.map((people) => {
         const { id, image, name, age } = people;
         return (
-          <div key={id} className="containerList">
-            <img className="img-box" src={people.image} alt="" />
-          </div>
+          <article key={id} className="containerList">
+            <img src={image} alt={name} />
+            <div className="blockText">
+              <h1>{name}</h1>
+              <h5>{age}</h5>
+            </div>
+          </article>
         );
       })}
-    </div>
+    </section>
   );
 };
 

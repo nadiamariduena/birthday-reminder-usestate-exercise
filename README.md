@@ -101,7 +101,7 @@ const { id, image, name, age } = people;
     const { id, image, name, age } = people;
     return (
       <div key={id} className="containerList">
-        <img className="img-box" src={people.image} alt="" />
+        <img className="img-box" src={image} alt="" />
       </div>
     );
   });
