@@ -90,3 +90,20 @@ const List = ({ people }) => {
 ```javascript
 const { id, image, name, age } = people;
 ```
+
+<br>
+
+#### Use the data
+
+```javascript
+{
+  people.map((people) => {
+    const { id, image, name, age } = people;
+    return (
+      <div key={id} className="containerList">
+        <img className="img-box" src={people.image} alt="" />
+      </div>
+    );
+  });
+}
+```
