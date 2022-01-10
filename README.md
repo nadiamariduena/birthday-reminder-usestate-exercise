@@ -63,6 +63,16 @@ function App() {
 export default App;
 ```
 
+<br>
+
 #### Now we are ready to pass the data from data.js through PROPS to the List component
 
 > <List people={people} />
+
+<br>
+
+#### List component
+
+```javascript
+const List = ({ people }) => {
+```
