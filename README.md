@@ -157,3 +157,7 @@ function App() {
 
 export default App;
 ```
+
+<br>
+
+[<img src="./src/img/useState-exercises.gif"/>]()
