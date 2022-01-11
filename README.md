@@ -4,4 +4,4 @@
 
 - The lesson related to useStates can be found here [useState | Recap](https://github.com/nadiamariduena/react-recap-2022/tree/5-useState-counter)
 
-[<img src="./src/img/useState-exercises.gif"/>]()
+[<img src="./src/img/useState-exercises.gif"/>](https://react-use-state-exercises2.netlify.app/)
