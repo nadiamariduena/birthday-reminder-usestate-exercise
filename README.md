@@ -2,12 +2,12 @@
 
 #### Recap exercises | React 2022 🍨
 
-- The lesson related to useStates can be found here ( it will be available soon) [useState | Recap](https://github.com/nadiamariduena/react-recap-2022/tree/5-useState-counter)
+- The lesson related to useStates can be found here [useState | Recap](https://github.com/nadiamariduena/react-recap-2022/tree/5-useState-counter) ( **it will be available soon**)
 
 <br>
 <br>
 
-> Click on the image to test it ✋
+> **Click** on the image to test it ✋
 
 <br>
 
