@@ -5,5 +5,10 @@
 - The lesson related to useStates can be found here ( it will be available soon) [useState | Recap](https://github.com/nadiamariduena/react-recap-2022/tree/5-useState-counter)
 
 <br>
+<br>
+
+> Click on the image to test it ✋
+
+<br>
 
 [<img src="./src/img/useState-exercises.gif"/>](https://react-use-state-exercises2.netlify.app/)
