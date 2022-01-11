@@ -1,4 +1,17 @@
-* {
+/* :root {
+  --max-width: 1170px;
+  --fixed-width: 450px;
+} */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@500&display=swap"); */
+/* 
+
+
+
+*/
+**,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,32 +21,57 @@ body {
   background-color: #f3efe9;
   overflow-x: hidden;
 }
-
-.App {
-  text-align: center;
-}
-
-#App {
-  width: 100vw;
+main {
   min-height: 100vh;
-  padding: 10vh 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#App-container {
-  padding: 0.5vh 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* 
-rgb(0 0 0 / 0.2);
+  background-color: rgb(247, 247, 234);
+  padding: 2em 0;
+}
+.container {
+  width: 90vw;
+  margin: 5rem 0;
+  /* max-width: var(--fixed-width); */
+  max-width: 450px;
 
-black and opacity
- box-shadow: 0 3px 10px rgb(39, 39, 39);
-*/
+  padding: 5rem 5rem;
+  background-color: rgb(247, 247, 234);
+  box-shadow: 0 0 50px rgb(233, 233, 233);
+  border-radius: 2rem;
+}
+.container h3 {
+  font-weight: 100;
+  font-size: 2rem;
+  text-transform: lowercase;
+  margin-bottom: 5rem;
+  text-align: center;
+  /* font-family: "Quicksand", sans-serif; */
+}
+
+.person {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem; /*  the space between the img and the text */
+  margin-bottom: 1.5rem;
+  /*  */
+  align-items: center;
+  border-bottom: 1px dotted rgb(223, 223, 208);
+  padding: 0.5rem 1em;
+}
+
+.person:hover {
+  background-color: rgb(250, 250, 236);
+  border-radius: 5rem;
+}
+
+.person img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgb(255, 242, 242);
 }
 
 .btn-card {
@@ -45,6 +83,7 @@ black and opacity
   border: 0.5px solid transparent;
 
   font-weight: 100;
+
   font-size: calc(7px + 1vmin);
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -59,45 +98,59 @@ black and opacity
   text-transform: uppercase;
 }
 
-/* ---- */
+/* 
 
-.listWrapper {
-  width: 100%;
-  border-radius: 2rem;
-  margin: 2rem;
-  padding: 2em;
+              COUNTRIES
+
+*/
+.countries {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(247, 247, 234);
+  padding: 2em 0;
+}
+
+.container-countries {
+  width: 90vw;
+  margin: 5rem 0;
+  /* max-width: var(--fixed-width); */
+  max-width: 450px;
+
+  padding: 5rem 5rem;
   background-color: rgb(247, 247, 234);
   box-shadow: 0 0 50px rgb(233, 233, 233);
+  border-radius: 2rem;
 }
-
-.containerList {
-  border-bottom: 1px dotted rgb(209, 209, 193);
-  display: flex;
-  justify-content: space-around;
+.container-countries h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: none;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.country-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem; /*  the space between the img and the text */
+  margin-bottom: 1.5rem;
+  /*  */
   align-items: center;
-  flex-direction: row;
-  margin: 0.5rem 0;
-  padding: 0.5rem 0;
+  border-bottom: 1px dotted rgb(223, 223, 208);
+  padding: 1rem 3em;
 }
 
-.containerList img {
+.country-card:hover {
+  background-color: rgb(250, 250, 236);
+  border-radius: 5rem;
+  padding: 1rem 3em;
+}
+.country-card img {
   width: 75px;
   height: 75px;
   object-fit: cover;
   border-radius: 50%;
-}
-
-.blockText {
-  margin: 0 0 0 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-h1 {
-  margin-bottom: 0.35rem;
-}
-h4 {
-  margin-bottom: 0;
+  box-shadow: 0 3px 10px rgb(255, 242, 242);
 }

@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3efe9;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+}
+
+#App {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 10vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#App-container {
+  padding: 0.5vh 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* 
+rgb(0 0 0 / 0.2);
+
+black and opacity
+ box-shadow: 0 3px 10px rgb(39, 39, 39);
+*/
+}
+
+.btn-card {
+  cursor: pointer;
+  margin-top: 30px;
+
+  padding: 12px 24px;
+  border-radius: 1rem;
+  border: 0.5px solid transparent;
+
+  font-weight: 100;
+  font-size: calc(7px + 1vmin);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(29, 29, 29);
+  background-color: #ece3cd;
+}
+
+.btn-card:hover {
+  background-color: #ecdab7;
+  color: rgba(46, 46, 46, 0.562);
+  transition: 1s ease-in-out;
+  text-transform: uppercase;
+}
+
+/* ---- */
+
+.listWrapper {
+  text-align: center;
+  width: 100%;
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 2em;
+  background-color: rgb(247, 247, 234);
+  box-shadow: 0 0 50px rgb(233, 233, 233);
+}
+
+.containerList {
+  border-bottom: 1px dotted rgb(223, 223, 208);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 0.5rem 1em;
+  padding: 0.5rem 1em;
+}
+.containerList:hover {
+  background-color: rgb(250, 250, 236);
+  border-radius: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 0.5rem 1em;
+  padding: 0.5rem 1em;
+}
+
+.containerList img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.blockText {
+  margin: 0 0 0 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 0.35rem;
+}
+h4 {
+  margin-bottom: 0;
+}
+------------
+
+import React, { useState } from "react";
+import "./App.css";
+import { data } from "./data";
+import Landscape from "./Landscape";
+import List from "./List";
+
+//
+
+//
+//
+function App() {
+  const [people, setPeople] = React.useState(data);
+
+  // const clearList = (id) => {
+  //   setPeople((people) => {
+  //     let newPeople = people.filter((people) => people.id !== id);
+  //     return newPeople;
+  //   });
+  // };
+  return (
+    <>
+      <section id="App">
+        <div id="App-container">
+          <h1>{people.length} Birthday today</h1>
+          <List people={people} />
+
+          <button
+            className="btn-card"
+            type="button"
+            onClick={() => setPeople([])}
+          >
+            clear all
+          </button>
+        </div>
+      </section>
+      <Landscape />
+    </>
+  );
+}
+
+export default App;
+
+-------
+
+import React, { useState } from "react";
+
+import { dataLand } from "./ListLandscape";
+
+const Landscape = () => {
+  //
+  const [country, setCountry] = React.useState(dataLand);
+
+  //
+  const clearItem = (id) => {
+    setCountry((countryItem) => {
+      let newCountry = countryItem.filter((item) => item.id !== id);
+      return newCountry;
+    });
+  };
+  //
+  //
+
+  //
+  return (
+    <>
+      <section className="listWrapper">
+        {country.map((item) => {
+          const { id, country, city, image } = item;
+          return (
+            <div key={id} className="containerList">
+              <img src={image} alt="" />
+              <h1>{country}</h1>
+              <h4>{city}</h4>
+              <button
+                className="btn-card"
+                type="button"
+                onClick={() => clearItem(id)}
+              >
+                clear item
+              </button>
+            </div>
+          );
+        })}
+
+        <button
+          className="btn-card"
+          type="button"
+          onClick={() => setCountry([])}
+        >
+          clear all
+        </button>
+      </section>
+    </>
+  );
+};
+
+export default Landscape;
+
+---------
+
+import React from "react";
+
+const List = ({ people }) => {
+  return (
+    <section className="listWrapper">
+      {people.map((people) => {
+        const { id, image, name, age } = people;
+        return (
+          <article key={id} className="containerList">
+            <img src={image} alt={name} />
+            <div className="blockText">
+              <h1>{name}</h1>
+              <h5>{age}</h5>
+            </div>
+          </article>
+        );
+      })}
+    </section>
+  );
+};
+
+export default List;

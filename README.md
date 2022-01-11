@@ -113,3 +113,47 @@ const { id, image, name, age } = people;
   });
 }
 ```
+
+#### This what I have until now, but I would like to add the option to delete each profile
+
+```javascript
+import React, { useState } from "react";
+import "./App.css";
+import { data } from "./data";
+import List from "./List";
+
+//
+
+//
+//
+function App() {
+  const [people, setPeople] = React.useState(data);
+
+  const clearList = (id) => {
+    setPeople((people) => {
+      let newPeople = people.filter((people) => people.id !== id);
+      return newPeople;
+    });
+  };
+  return (
+    <>
+      <section id="App">
+        <div id="App-container">
+          <h1>{people.length} Birthday today</h1>
+          <List people={people} />
+
+          <button
+            className="btn-card"
+            type="button"
+            onClick={() => setPeople([])}
+          >
+            clear all
+          </button>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default App;
+```
